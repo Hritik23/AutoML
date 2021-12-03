@@ -1,5 +1,6 @@
--- To delete the database 'test' if exists [ be careful here]
+-- To delete the database 'test'  if exists [ be careful here]
 DROP DATABASE test;
+-- DROP DATABASE mindsdb;
 
 
 -- Creating the new database 'test'
@@ -36,3 +37,12 @@ LOAD DATA LOCAL INFILE "data.csv" INTO TABLE test.bank_churn FIELDS TERMINATED B
 
 -- TO see everything working fine
 SELECT * FROM bank_churn LIMIT 5;
+
+
+-- This is for training the model
+INSERT INTO mindsdb.predictors(name, predict, select_data_query)
+VALUES ("churn_model", "Exited", "SELECT * FROM test.bank_churn");
+
+
+-- to see whether model has trained or not
+SELECT * FROM mindsdb.predictors WHERE name="churn_model";
