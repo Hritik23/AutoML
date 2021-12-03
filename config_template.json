@@ -1,0 +1,28 @@
+
+
+{
+    "api": {
+        "http": {
+            "host": "127.0.0.1",
+            "port": "47334"
+        },
+        "mysql": {
+            "host": "127.0.0.1",
+            "password": "",
+            "port": "47335",
+            "user": "root"
+        }
+    },
+    "config_version": "1.4",
+    "integrations": {
+      "default_mysql": {
+            "publish": true,
+            "host": "127.0.0.1",
+            "password": "", # We need to add MySQL password here.
+            "port": "3306",
+            "type": "mysql",
+            "user": "root"
+      }
+    },
+    "storage_dir": "E:/Hritik Dev/Documents/A--This_is_it/DL/MySQL/AutoML/storage"
+}
