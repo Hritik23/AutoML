@@ -24,5 +24,5 @@
             "user": "root"
       }
     },
-    "storage_dir": "E:/Hritik Dev/Documents/A--This_is_it/DL/MySQL/AutoML/storage"
+    "storage_dir": "" # We need to give storage path here
 }
